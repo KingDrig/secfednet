@@ -1,0 +1,40 @@
+base,rotulo,bruto,excl_attempted,excl_nao_finito,excl_grupo,excl_vetor_bruto,excl_vetor_modelo,treino,validacao,teste_reservado,episodios_proxy,pares_independentes_confirmados,limitacao
+CICIDS2017 corrigido,BENIGN,1582566,0,5,547691,39310,41,536862,170113,288544,NA,NA,único rótulo compartilhado entre treino e validação
+CICIDS2017 corrigido,Botnet,736,0,0,0,0,0,0,0,736,1,0,"somente sexta reservada, rótulo ausente do treino"
+CICIDS2017 corrigido,DDoS,95144,0,0,0,0,0,0,0,95144,1,0,"somente sexta reservada, rótulo ausente do treino"
+CICIDS2017 corrigido,DoS GoldenEye,7567,0,0,6311,0,0,1256,0,0,1,0,somente no treino
+CICIDS2017 corrigido,DoS Hulk,158468,0,0,126499,0,0,31969,0,0,1,0,somente no treino
+CICIDS2017 corrigido,DoS Slowhttptest,1740,0,0,1592,0,0,148,0,0,1,0,somente no treino
+CICIDS2017 corrigido,DoS Slowloris,3859,0,0,3859,0,0,0,0,0,1,0,suporte zerado pelo expurgo de grupos
+CICIDS2017 corrigido,FTP-Patator,3972,0,0,62,0,0,3910,0,0,1,0,somente no treino
+CICIDS2017 corrigido,Heartbleed,11,0,0,0,0,0,11,0,0,1,0,somente no treino
+CICIDS2017 corrigido,Infiltration,36,0,0,0,0,0,0,36,0,1,0,validação com rótulo ausente do treino
+CICIDS2017 corrigido,Infiltration - Portscan,71767,0,0,0,14794,0,0,56973,0,1,0,validação com rótulo ausente do treino
+CICIDS2017 corrigido,Portscan,159066,0,0,0,0,0,0,0,159066,2,0,"somente sexta reservada, rótulo ausente do treino"
+CICIDS2017 corrigido,SSH-Patator,2961,0,0,27,0,0,2934,0,0,2,0,somente no treino
+CICIDS2017 corrigido,Web Attack - Brute Force,73,0,0,50,0,0,0,23,0,1,0,validação com rótulo ausente do treino
+CICIDS2017 corrigido,Web Attack - SQL Injection,13,0,0,13,0,0,0,0,0,1,0,suporte zerado pelo expurgo de grupos
+CICIDS2017 corrigido,Web Attack - XSS,18,0,0,18,0,0,0,0,0,1,0,suporte zerado pelo expurgo de grupos
+CICIDS2017 corrigido,Botnet - Attempted,4067,4067,0,0,0,0,0,0,0,NA,NA,Attempted preservado no inventário e separado do alvo
+CICIDS2017 corrigido,DoS GoldenEye - Attempted,80,80,0,0,0,0,0,0,0,NA,NA,Attempted preservado no inventário e separado do alvo
+CICIDS2017 corrigido,DoS Hulk - Attempted,581,581,0,0,0,0,0,0,0,NA,NA,Attempted preservado no inventário e separado do alvo
+CICIDS2017 corrigido,DoS Slowhttptest - Attempted,3368,3368,0,0,0,0,0,0,0,NA,NA,Attempted preservado no inventário e separado do alvo
+CICIDS2017 corrigido,DoS Slowloris - Attempted,1847,1847,0,0,0,0,0,0,0,NA,NA,Attempted preservado no inventário e separado do alvo
+CICIDS2017 corrigido,FTP-Patator - Attempted,12,12,0,0,0,0,0,0,0,NA,NA,Attempted preservado no inventário e separado do alvo
+CICIDS2017 corrigido,Infiltration - Attempted,45,45,0,0,0,0,0,0,0,NA,NA,Attempted preservado no inventário e separado do alvo
+CICIDS2017 corrigido,SSH-Patator - Attempted,27,27,0,0,0,0,0,0,0,NA,NA,Attempted preservado no inventário e separado do alvo
+CICIDS2017 corrigido,Web Attack - Brute Force - Attempted,1292,1292,0,0,0,0,0,0,0,NA,NA,Attempted preservado no inventário e separado do alvo
+CICIDS2017 corrigido,Web Attack - SQL Injection - Attempted,5,5,0,0,0,0,0,0,0,NA,NA,Attempted preservado no inventário e separado do alvo
+CICIDS2017 corrigido,Web Attack - XSS - Attempted,655,655,0,0,0,0,0,0,0,NA,NA,Attempted preservado no inventário e separado do alvo
+CICIDS2017 corrigido,TOTAL,2099976,11979,5,686122,54104,41,577090,227145,543490,NA,NA,sexta reservada; zero predições
+"UNSW-NB15, partições oficiais documentadas",Normal,93000,NA,NA,NA,NA,NA,56000,NA,37000,NA,NA,contagem de Gabriel; CSVs ausentes; corpus integral separado
+"UNSW-NB15, partições oficiais documentadas",Analysis,2677,NA,NA,NA,NA,NA,2000,NA,677,NA,NA,contagem de Gabriel; CSVs ausentes; corpus integral separado
+"UNSW-NB15, partições oficiais documentadas",Backdoor,2329,NA,NA,NA,NA,NA,1746,NA,583,NA,NA,contagem de Gabriel; CSVs ausentes; corpus integral separado
+"UNSW-NB15, partições oficiais documentadas",DoS,16353,NA,NA,NA,NA,NA,12264,NA,4089,NA,NA,contagem de Gabriel; CSVs ausentes; corpus integral separado
+"UNSW-NB15, partições oficiais documentadas",Exploits,44525,NA,NA,NA,NA,NA,33393,NA,11132,NA,NA,contagem de Gabriel; CSVs ausentes; corpus integral separado
+"UNSW-NB15, partições oficiais documentadas",Fuzzers,24246,NA,NA,NA,NA,NA,18184,NA,6062,NA,NA,contagem de Gabriel; CSVs ausentes; corpus integral separado
+"UNSW-NB15, partições oficiais documentadas",Generic,58871,NA,NA,NA,NA,NA,40000,NA,18871,NA,NA,contagem de Gabriel; CSVs ausentes; corpus integral separado
+"UNSW-NB15, partições oficiais documentadas",Reconnaissance,13987,NA,NA,NA,NA,NA,10491,NA,3496,NA,NA,contagem de Gabriel; CSVs ausentes; corpus integral separado
+"UNSW-NB15, partições oficiais documentadas",Shellcode,1511,NA,NA,NA,NA,NA,1133,NA,378,NA,NA,contagem de Gabriel; CSVs ausentes; corpus integral separado
+"UNSW-NB15, partições oficiais documentadas",Worms,174,NA,NA,NA,NA,NA,130,NA,44,NA,NA,contagem de Gabriel; CSVs ausentes; corpus integral separado
+"UNSW-NB15, partições oficiais documentadas",TOTAL,257673,NA,NA,NA,NA,NA,175341,NA,82332,NA,NA,contagem de Gabriel; CSVs ausentes; corpus integral separado
