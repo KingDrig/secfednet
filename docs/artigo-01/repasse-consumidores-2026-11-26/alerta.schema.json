@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SecFedNet: proposta de formato para fixture sintético de alerta",
+  "type": "object",
+  "required": ["versao", "sintetico", "alerta_id", "fluxo", "classificacao", "modelo"],
+  "additionalProperties": false,
+  "properties": {
+    "versao": {"const": "secfednet-alerta-proposta-v0"},
+    "sintetico": {"const": true},
+    "alerta_id": {"type": "string", "pattern": "^fixture:"},
+    "fluxo": {
+      "type": "object",
+      "required": ["id", "observado_em", "origem", "destino", "protocolo"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {"type": "string", "pattern": "^fixture:"},
+        "observado_em": {"type": "string", "format": "date-time", "pattern": "Z$"},
+        "origem": {"$ref": "#/$defs/endpoint"},
+        "destino": {"$ref": "#/$defs/endpoint"},
+        "protocolo": {"type": "integer", "minimum": 0, "maximum": 255}
+      }
+    },
+    "classificacao": {
+      "type": "object",
+      "required": ["taxonomia", "rotulo", "score", "semantica_score", "limiar"],
+      "additionalProperties": false,
+      "properties": {
+        "taxonomia": {"const": "taxonomia-ficticia-v0"},
+        "rotulo": {"type": "string", "minLength": 1},
+        "score": {"type": "number", "minimum": 0, "maximum": 1},
+        "semantica_score": {"const": "valor_ilustrativo_sem_modelo"},
+        "limiar": {"type": "null"}
+      }
+    },
+    "modelo": {
+      "type": "object",
+      "required": ["versao", "checkpoint_sha256"],
+      "additionalProperties": false,
+      "properties": {
+        "versao": {"const": "fixture-sem-modelo"},
+        "checkpoint_sha256": {"type": "null"}
+      }
+    }
+  },
+  "$defs": {
+    "endpoint": {
+      "type": "object",
+      "required": ["ip", "porta"],
+      "additionalProperties": false,
+      "properties": {
+        "ip": {"type": "string", "format": "ipv4"},
+        "porta": {"type": "integer", "minimum": 0, "maximum": 65535}
+      }
+    }
+  }
+}

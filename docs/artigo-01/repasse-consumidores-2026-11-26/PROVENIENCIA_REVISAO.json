@@ -1,0 +1,87 @@
+{
+  "origem_pdfs": [
+    {
+      "arquivo": "Controle Artigos - Time UFRA.pdf",
+      "uso": "pp. 1–2, responsáveis e cadeia",
+      "sha256": "0345784d8a6fd016948b16b1fd7bbec0f0951089f24e2ce53445c89ecfb776c7"
+    },
+    {
+      "arquivo": "SecFedNet_Artigo1_passo_a_passo.pdf",
+      "uso": "pp. 3–4, entregáveis e dependências",
+      "sha256": "7a36fb02aa6a6a34323191c3118bccfa41713e305e013467245f334367a4abf2"
+    },
+    {
+      "arquivo": "Relatorio_SecFedNet_Artigo_01_para_Pedro.pdf",
+      "uso": "p. 1, repasse preparado e métricas de referência",
+      "sha256": "bdcbd97b366e09deac3298bc405272ffa6c9dc9e15431290a77cd727f4a5715e"
+    }
+  ],
+  "versoes_git": {
+    "baseline": "0b38f255af6f22e4642c584c0f0e09b15ef9263e",
+    "reproducao_vm": "d27c89de61c27e38f4d989f86d603972a8a17f96",
+    "expansao": "cf8b332a1f76f6cdfd6c303ca2e07ac31b09290b"
+  },
+  "membros_internos": {
+    "R3-CHECKPOINT": {
+      "membro": "checkpoint_cnn1d.pt",
+      "sha256": "37db7d4f6d0123786cc4ed5227d670edb1344c07089e8ff6910c6446e57400f3"
+    },
+    "R3-SHAP-INDICES": {
+      "caminho_relativo_ao_repo": "secfednet-local/artigo-05/shap-cnn-fedavg-2026-11-25_19-38-47/pacote/indices_particao.npz",
+      "sha256": "a8ae45eb929d4958f0d96624df5736589852925d19a10560f9131bd978fe1034"
+    },
+    "R3-SHAP-MODELOS": {
+      "modelos/cliente_0_rodada_03.pt": "ba3b6847584e9270d83c3fafd8ee3247c85961998b7aeec45ca7920b07bc92da",
+      "modelos/cliente_1_rodada_03.pt": "08c9480e2867691e4c900308022638d2f73d99949bd86dfd9fbc40968642150e",
+      "modelos/cliente_2_rodada_03.pt": "0596f1eff0fdef040d3e8a1f5b32da1909dba0317986d60f56f7f6e3c7e482fe",
+      "modelos/cliente_3_rodada_03.pt": "f9c4a629eca53bb986ec32e16816862143cb854ca0e4c5222cc957a534f11338",
+      "modelos/cliente_4_rodada_03.pt": "722f02b9e1838e0ca147f346a2a2d1472d5e7e9f05928d24584530cf9ef81d82",
+      "modelos/global_zip.pt": "37db7d4f6d0123786cc4ed5227d670edb1344c07089e8ff6910c6446e57400f3"
+    },
+    "FRIDAY-CSV": {
+      "membro": "friday.csv",
+      "sha256": "ebd499e6f23bd59f9cb81bec28178491b02b925fa5640a24215c9437d79482d0"
+    },
+    "R20-CANDIDATA": "aa81e876a13ce5304501aa4c2a9802cf6238f0cfdd002d3b9e526aec46c03f65",
+    "R3-cnn1d.py": {
+      "membro": "cnn1d.py",
+      "sha256": "ed4f90225d3bbb765f9dc3bf461362ba7bdae6c47e70ac1c3333bbe8b0598861"
+    },
+    "R3-requirements.lock": {
+      "membro": "requirements.lock",
+      "sha256": "a02b1c3534785c41322265e49ab70d4314a10656e7a05bb5ea6b15d4cd47045c"
+    },
+    "R3-contrato.json": {
+      "membro": "contrato.json",
+      "sha256": "e5114198735db8e583fd0ef7549c932726ec99a41f6621433d008c1de9e919f1"
+    }
+  },
+  "artefatos_referenciados_sha256": {
+    "ZIP-INFERENCIA": "e7d042b38c77b96bef54533302bef817d6b8a4a8e55b717bac7b32f98b5b6014",
+    "ZIP-CLIENTES20": "4ed61d40509e15d3d67a45c96e1d0fb19ff686a13925680117c2cc4d21f4af51",
+    "ZIP-SHAP": "9eac2d389dbbc6e7e4eec030507b896fe51be4f634d0f6c0b8903a079b5bab92",
+    "CICIDS-ZIP": "97fdb91d339e2d8cf5627f981b831e5e7e400b981c58181c451a38fd03c48883",
+    "R3-SPLIT": "5511442dcb01580d7cd327f312ca2c651e7ed194f4628f2246387de0bd779447",
+    "R20-SPLIT": "bb710d6492ac83456b61ba8469d06f6729bf063ba586a557b0165a701173339f",
+    "R20-CLIENTES": "bbb35ecd842ddf7924e6b9d884d096a36bac01a258affaee27af34b592ddaffb",
+    "R20-PROTOCOLO": "36e00a46d61667b84874feb76ef8864fcd219aa64a5112667f4a24a31b4e333f",
+    "R20-CONFIG": "c92f6b40c53b6df12f8afecbe53336c7ac6f8631cbfa1a952070d82808460c20",
+    "R20-GLOBAL-fedavg_sgd": "909d34c1c4d70e3485ac436b509aeb58bc14ea3d779cac97ec9c5dd3b8c6412d",
+    "R20-SCORES-fedavg_sgd": "65049dd1a1e6628c8d4bf5e039e7d7b130ba93f2cde6c3fe2e3f48cfebe96143",
+    "R20-GLOBAL-scaffold": "b6e78e61bd5e470abf9f2a210c9bace38c6a5637523f9c353162013d70d6f2f2",
+    "R20-SCORES-scaffold": "b627ec5effb614ecc0bad5bc22c21b9a062ef24b92dd680e6570eb3e60317619",
+    "EXP-INDICES": "af1c057c2ca9114c4bcad8c2da5b8ce265c2d22427f7771fd8ae983cba17bdd6",
+    "EXP-PREPROCESSAMENTO": "68ca040c9419a0f38ac9ee24fa76644263c7fdc40ad6dcf503402f8c2444ec27",
+    "EXP-CLIENTES-CNN": "15b1265397a8100f75a8d82dd11909a6c126e822749827f077d694af546d22fe",
+    "EXP-LOGISTICA": "59401542d3e6512e57b9c6d37a8fc64bf1b6983762b7db57a215de8dbd869c5d",
+    "UNSW-DOC": "9334cbae93e244f94c2bb46d6fd9621aae0e4809f6bd4a190dcff1eab62a5933",
+    "R20-LOCK": "af00bc8c6bf5cd033462e8d2a5ac1ce6bada4e22dde698d85380183941ca5d44",
+    "R20-CODIGO": "cebe2a546a8b05da725c858d94fb4d83a2936892cff7bb6b65ffc83ec9680080",
+    "EXP-LOCK": "af00bc8c6bf5cd033462e8d2a5ac1ce6bada4e22dde698d85380183941ca5d44",
+    "EXP-CODIGO": "fd7e5ce3ecb390047b9d14deeaca27670eacc510c6065a59b1a86e2ed95adc38"
+  },
+  "pulso": {
+    "confirmacao_de_recebimento_dos_zip": "não localizada nas fontes consultadas",
+    "origem_artigo_02": "PDF de repasse preparado; pacote per-client posterior permanece local"
+  }
+}

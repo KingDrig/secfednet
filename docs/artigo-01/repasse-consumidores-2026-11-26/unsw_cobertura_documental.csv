@@ -1,0 +1,12 @@
+classe,bruto_corpus_integral_verificado,bruto_particoes_documentado,exclusoes_verificadas,treino_oficial_documentado,validacao_materializada,teste_oficial_reservado_documentado,evidencia
+Normal,NA,93000,NA,56000,NA,37000,documentado Gabriel; CSV ausente
+Analysis,NA,2677,NA,2000,NA,677,documentado Gabriel; CSV ausente
+Backdoor,NA,2329,NA,1746,NA,583,documentado Gabriel; CSV ausente
+DoS,NA,16353,NA,12264,NA,4089,documentado Gabriel; CSV ausente
+Exploits,NA,44525,NA,33393,NA,11132,documentado Gabriel; CSV ausente
+Fuzzers,NA,24246,NA,18184,NA,6062,documentado Gabriel; CSV ausente
+Generic,NA,58871,NA,40000,NA,18871,documentado Gabriel; CSV ausente
+Reconnaissance,NA,13987,NA,10491,NA,3496,documentado Gabriel; CSV ausente
+Shellcode,NA,1511,NA,1133,NA,378,documentado Gabriel; CSV ausente
+Worms,NA,174,NA,130,NA,44,documentado Gabriel; CSV ausente
+TOTAL,NA,257673,NA,175341,NA,82332,documentado Gabriel; CSV ausente

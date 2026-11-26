@@ -1,0 +1,28 @@
+classe,episodios_proxy_elegiveis,unidades_observadas_conservadoras,pares_independentes_confirmados,total_episodios_independentes,justificativa
+BENIGN,NA,5,NA,PENDENTE,cinco capturas com BENIGN; independência de populações não demonstrada
+Botnet,1,1,0,PENDENTE,1 episódio em uma captura; recorrência independente não demonstrada
+DDoS,1,1,0,PENDENTE,1 episódio em uma captura; recorrência independente não demonstrada
+DoS GoldenEye,1,1,0,PENDENTE,1 episódio em uma captura; recorrência independente não demonstrada
+DoS Hulk,1,1,0,PENDENTE,1 episódio em uma captura; recorrência independente não demonstrada
+DoS Slowhttptest,1,1,0,PENDENTE,1 episódio em uma captura; recorrência independente não demonstrada
+DoS Slowloris,1,1,0,PENDENTE,1 episódio em uma captura; recorrência independente não demonstrada
+FTP-Patator,1,1,0,PENDENTE,1 episódio em uma captura; recorrência independente não demonstrada
+Heartbleed,1,1,0,PENDENTE,11 linhas de um único grupo; 1 episódio observado
+Infiltration,1,1,0,PENDENTE,1 episódio elegível; o segundo proxy observado na família contém somente 1 Attempted
+Infiltration - Portscan,1,1,0,PENDENTE,mesma família de Infiltration; 1 episódio elegível
+Portscan,2,1,0,PENDENTE,"2 proxies (344 + 158722); 3 grupos e 89 vetores comuns, ambos na sexta reservada"
+SSH-Patator,2,1,0,PENDENTE,"2 proxies (2960 + 1); compartilham 1 grupo, mantidos juntos"
+Web Attack - Brute Force,1,1,0,PENDENTE,1 episódio em uma captura; recorrência independente não demonstrada
+Web Attack - SQL Injection,1,1,0,PENDENTE,1 episódio em uma captura; recorrência independente não demonstrada
+Web Attack - XSS,1,1,0,PENDENTE,1 episódio em uma captura; recorrência independente não demonstrada
+Botnet - Attempted,NA,NA,NA,NA,Attempted preservado no inventário e excluído do alvo
+DoS GoldenEye - Attempted,NA,NA,NA,NA,Attempted preservado no inventário e excluído do alvo
+DoS Hulk - Attempted,NA,NA,NA,NA,Attempted preservado no inventário e excluído do alvo
+DoS Slowhttptest - Attempted,NA,NA,NA,NA,Attempted preservado no inventário e excluído do alvo
+DoS Slowloris - Attempted,NA,NA,NA,NA,Attempted preservado no inventário e excluído do alvo
+FTP-Patator - Attempted,NA,NA,NA,NA,Attempted preservado no inventário e excluído do alvo
+Infiltration - Attempted,NA,NA,NA,NA,Attempted preservado no inventário e excluído do alvo
+SSH-Patator - Attempted,NA,NA,NA,NA,Attempted preservado no inventário e excluído do alvo
+Web Attack - Brute Force - Attempted,NA,NA,NA,NA,Attempted preservado no inventário e excluído do alvo
+Web Attack - SQL Injection - Attempted,NA,NA,NA,NA,Attempted preservado no inventário e excluído do alvo
+Web Attack - XSS - Attempted,NA,NA,NA,NA,Attempted preservado no inventário e excluído do alvo

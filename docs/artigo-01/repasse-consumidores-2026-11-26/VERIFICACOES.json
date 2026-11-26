@@ -1,0 +1,442 @@
+{
+  "estado": "OK",
+  "cf8b332": {
+    "status": "OK",
+    "arquivos": 124,
+    "hashes": 123,
+    "links_locais": 97,
+    "checks_VM": 231,
+    "matrizes": 12,
+    "nominais": 192,
+    "variacoes_recalculadas": 20,
+    "pares_configuracao": 3,
+    "limite": "AP preservada dos ensaios, não recalculada sem scores. Sem desempenho na sexta."
+  },
+  "d27c89de": {
+    "status": "OK",
+    "arquivos_selecao": 46,
+    "baseline_hashes": 89,
+    "curvas_linhas": 40,
+    "historicos": [
+      {
+        "manifesto": "SHA256_ARTEFATOS",
+        "iguais": 21,
+        "diferentes": 6,
+        "ausentes_no_wrapper": 0
+      },
+      {
+        "manifesto": "SHA256_ARTEFATOS_20",
+        "iguais": 101,
+        "diferentes": 9,
+        "ausentes_no_wrapper": 3
+      }
+    ],
+    "acervo_arquivos_recalculados": 0,
+    "pontos": [
+      {
+        "metodo": "fedavg_sgd",
+        "rodadas": 2,
+        "limiar": 0.41333019733428955,
+        "orcamento_fp": 407,
+        "suporte": {
+          "BENIGN": 40776,
+          "DDoS": 10039
+        },
+        "matriz_real_por_previsto": [
+          [
+            40375,
+            401
+          ],
+          [
+            10032,
+            7
+          ]
+        ],
+        "fpr": 0.009834216205611144,
+        "recall_ddos": 0.0006972806056380117,
+        "macro_f1_binario": 0.44346091992320197
+      },
+      {
+        "metodo": "scaffold",
+        "rodadas": 2,
+        "limiar": 0.4026653468608857,
+        "orcamento_fp": 407,
+        "suporte": {
+          "BENIGN": 40776,
+          "DDoS": 10039
+        },
+        "matriz_real_por_previsto": [
+          [
+            40776,
+            0
+          ],
+          [
+            10039,
+            0
+          ]
+        ],
+        "fpr": 0.0,
+        "recall_ddos": 0.0,
+        "macro_f1_binario": 0.44519658045004423
+      },
+      {
+        "metodo": "fedavg_sgd",
+        "rodadas": 20,
+        "limiar": 0.3651059865951538,
+        "orcamento_fp": 407,
+        "suporte": {
+          "BENIGN": 40776,
+          "DDoS": 10039
+        },
+        "matriz_real_por_previsto": [
+          [
+            40370,
+            406
+          ],
+          [
+            84,
+            9955
+          ]
+        ],
+        "fpr": 0.009956837355307044,
+        "recall_ddos": 0.9916326327323438,
+        "macro_f1_binario": 0.9849740690317736
+      },
+      {
+        "metodo": "scaffold",
+        "rodadas": 20,
+        "limiar": 0.21026940643787384,
+        "orcamento_fp": 407,
+        "suporte": {
+          "BENIGN": 40776,
+          "DDoS": 10039
+        },
+        "matriz_real_por_previsto": [
+          [
+            40369,
+            407
+          ],
+          [
+            2538,
+            7501
+          ]
+        ],
+        "fpr": 0.009981361585246224,
+        "recall_ddos": 0.7471859746986752,
+        "macro_f1_binario": 0.9003566947170022
+      }
+    ],
+    "limite": "Sem treino; métricas recalculadas das matrizes. Sem --acervo, igualdade binária usa hashes consultados na VM."
+  },
+  "distribuicao": {
+    "origem": "secfednet-local/artigo-01/execucoes/2026-11-26/entrega-consumidores-11-33-26/distribuicao",
+    "manifesto_total": 17,
+    "tabela_attempted": [
+      11979,
+      11979,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "readme_sha256": "0aae0aa0ac9bcd639d61b70bb15e0a462970068c08ee3d8f28903b357a8cb406",
+    "verificacao": "cópia limpa + 3 extrações, processos isolados"
+  },
+  "pacotes": {
+    "secfednet-cnn1d-v1.zip": {
+      "sha256": "e7d042b38c77b96bef54533302bef817d6b8a4a8e55b717bac7b32f98b5b6014",
+      "bytes": 13489,
+      "itens_manifesto": 7,
+      "exemplo_igual_byte_a_byte": true,
+      "exemplo": {
+        "classe_id": 1,
+        "classe": "DDoS",
+        "score": 0.987495481967926,
+        "embedding": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.14054067432880402,
+          10.26510238647461,
+          0.0,
+          0.05047319829463959,
+          0.0,
+          0.06216513365507126,
+          0.09111110866069794,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "checkpoint_sha256": "37db7d4f6d0123786cc4ed5227d670edb1344c07089e8ff6910c6446e57400f3",
+      "status": "OK",
+      "tempo_s": 2.8428174889995717
+    },
+    "SecFedNet_Artigo02_Clientes_Rodada20_CANDIDATA.zip": {
+      "sha256": "4ed61d40509e15d3d67a45c96e1d0fb19ff686a13925680117c2cc4d21f4af51",
+      "bytes": 3284945,
+      "itens_manifesto": 9,
+      "resultado": {
+        "status": "OK",
+        "fluxos": 50815,
+        "avaliacoes": 101630,
+        "clientes_por_metodo": 5,
+        "scores_npy_reconstruidos": true,
+        "matrizes_globais_identicas": true,
+        "metricas_nao_arredondadas": true
+      },
+      "status": "OK",
+      "tempo_s": 1.1390878320089541
+    },
+    "secfednet-shap-fedavg3.zip": {
+      "sha256": "9eac2d389dbbc6e7e4eec030507b896fe51be4f634d0f6c0b8903a079b5bab92",
+      "bytes": 1414041,
+      "itens_manifesto": 34,
+      "resultado": {
+        "status": "OK",
+        "arquivos_manifesto": 34,
+        "treino_atribuido_exatamente_uma_vez": 254074,
+        "sobreposicoes": 0,
+        "locais_recompoem_global_zip_bit_a_bit": true,
+        "carregamento": "weights_only=True; map_location=cpu",
+        "modelos": {
+          "global_zip": {
+            "checkpoint": "modelos/global_zip.pt",
+            "sha256": "37db7d4f6d0123786cc4ed5227d670edb1344c07089e8ff6910c6446e57400f3",
+            "classe_id": 1,
+            "classe": "DDoS",
+            "score": 0.987495481967926,
+            "embedding": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.14054067432880402,
+              10.26510238647461,
+              0.0,
+              0.05047319829463959,
+              0.0,
+              0.06216513365507126,
+              0.09111110866069794,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "cliente_0": {
+            "checkpoint": "modelos/cliente_0_rodada_03.pt",
+            "sha256": "ba3b6847584e9270d83c3fafd8ee3247c85961998b7aeec45ca7920b07bc92da",
+            "classe_id": 1,
+            "classe": "DDoS",
+            "score": 0.9818028807640076,
+            "embedding": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              9.310136795043945,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "cliente_1": {
+            "checkpoint": "modelos/cliente_1_rodada_03.pt",
+            "sha256": "08c9480e2867691e4c900308022638d2f73d99949bd86dfd9fbc40968642150e",
+            "classe_id": 1,
+            "classe": "DDoS",
+            "score": 0.9453923106193542,
+            "embedding": [
+              0.0,
+              0.0,
+              0.0,
+              0.07273409515619278,
+              0.0,
+              0.14270037412643433,
+              7.393904685974121,
+              0.0,
+              0.12705957889556885,
+              0.0,
+              0.07804190367460251,
+              0.12487450242042542,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "cliente_2": {
+            "checkpoint": "modelos/cliente_2_rodada_03.pt",
+            "sha256": "0596f1eff0fdef040d3e8a1f5b32da1909dba0317986d60f56f7f6e3c7e482fe",
+            "classe_id": 1,
+            "classe": "DDoS",
+            "score": 0.5691125988960266,
+            "embedding": [
+              0.0,
+              0.0,
+              0.0,
+              0.834454357624054,
+              0.0,
+              1.0153529644012451,
+              5.700531005859375,
+              0.0,
+              1.0013811588287354,
+              0.0,
+              0.9714106917381287,
+              1.01287043094635,
+              0.0,
+              0.0,
+              0.7848636507987976,
+              0.0
+            ]
+          },
+          "cliente_3": {
+            "checkpoint": "modelos/cliente_3_rodada_03.pt",
+            "sha256": "f9c4a629eca53bb986ec32e16816862143cb854ca0e4c5222cc957a534f11338",
+            "classe_id": 1,
+            "classe": "DDoS",
+            "score": 0.9101709723472595,
+            "embedding": [
+              0.0,
+              0.0,
+              0.0,
+              0.26670271158218384,
+              0.0,
+              0.3926973342895508,
+              7.394048690795898,
+              0.0,
+              0.34490352869033813,
+              0.0,
+              0.30816584825515747,
+              0.3784872591495514,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "cliente_4": {
+            "checkpoint": "modelos/cliente_4_rodada_03.pt",
+            "sha256": "722f02b9e1838e0ca147f346a2a2d1472d5e7e9f05928d24584530cf9ef81d82",
+            "classe_id": 1,
+            "classe": "DDoS",
+            "score": 0.9970188140869141,
+            "embedding": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.06258106231689453,
+              12.649316787719727,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.015541233122348785,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "modelos_sha256": {
+        "modelos/cliente_0_rodada_03.pt": "ba3b6847584e9270d83c3fafd8ee3247c85961998b7aeec45ca7920b07bc92da",
+        "modelos/cliente_1_rodada_03.pt": "08c9480e2867691e4c900308022638d2f73d99949bd86dfd9fbc40968642150e",
+        "modelos/cliente_2_rodada_03.pt": "0596f1eff0fdef040d3e8a1f5b32da1909dba0317986d60f56f7f6e3c7e482fe",
+        "modelos/cliente_3_rodada_03.pt": "f9c4a629eca53bb986ec32e16816862143cb854ca0e4c5222cc957a534f11338",
+        "modelos/cliente_4_rodada_03.pt": "722f02b9e1838e0ca147f346a2a2d1472d5e7e9f05928d24584530cf9ef81d82",
+        "modelos/global_zip.pt": "37db7d4f6d0123786cc4ed5227d670edb1344c07089e8ff6910c6446e57400f3"
+      },
+      "indices_sha256": "a8ae45eb929d4958f0d96624df5736589852925d19a10560f9131bd978fe1034",
+      "status": "OK",
+      "tempo_s": 3.2866649689967744
+    }
+  },
+  "pedro_kaim": {
+    "pedro": {
+      "fedavg_sgd": {
+        "matriz": [
+          [
+            40370,
+            406
+          ],
+          [
+            84,
+            9955
+          ]
+        ],
+        "macro_f1": 0.9849740690317736,
+        "limiar": 0.3651059865951538
+      },
+      "scaffold": {
+        "matriz": [
+          [
+            40369,
+            407
+          ],
+          [
+            2538,
+            7501
+          ]
+        ],
+        "macro_f1": 0.9003566947170022,
+        "limiar": 0.21026940643787384
+      }
+    },
+    "treino_verificado": 203251,
+    "validacao_verificada": 50815,
+    "intersecao_ajuste_validacao": 0,
+    "particoes_treino_n": [
+      4605,
+      19982,
+      6300,
+      50749,
+      121615
+    ],
+    "manifesto_validacao_sha256": "bb710d6492ac83456b61ba8469d06f6729bf063ba586a557b0165a701173339f",
+    "clientes_ajuste_sha256": "bbb35ecd842ddf7924e6b9d884d096a36bac01a258affaee27af34b592ddaffb",
+    "zip_dataset": "secfednet-local/artigo-01/cicids2017-corrigido/CICIDS2017_improved.zip",
+    "zip_sha256": "97fdb91d339e2d8cf5627f981b831e5e7e400b981c58181c451a38fd03c48883",
+    "membro_dataset": "friday.csv",
+    "membro_sha256": "ebd499e6f23bd59f9cb81bec28178491b02b925fa5640a24215c9437d79482d0"
+  },
+  "baseline_logistica": {
+    "status": "OK",
+    "weights_only": true,
+    "dispositivo": "cpu",
+    "scores_quinta_bit_a_bit": true,
+    "metricas_principal_sensibilidade_identicas": true,
+    "exemplo_bruto_quinta_preprocessado_igual": true,
+    "sexta_avaliada": false
+  },
+  "opacus_instalado": false,
+  "fixture": {
+    "verificacao": "stdlib, campos semânticos",
+    "mutações_rejeitadas": [
+      "sintetico=false",
+      "IP fora da documentação"
+    ]
+  },
+  "vm_acessada": false,
+  "treino_executado": false,
+  "teste_reservado_avaliado": false
+}

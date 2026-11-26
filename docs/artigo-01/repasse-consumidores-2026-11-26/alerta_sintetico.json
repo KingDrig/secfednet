@@ -1,0 +1,20 @@
+{
+  "versao": "secfednet-alerta-proposta-v0",
+  "sintetico": true,
+  "alerta_id": "fixture:alerta-001",
+  "fluxo": {
+    "id": "fixture:fluxo-001",
+    "observado_em": "2026-01-01T12:00:00Z",
+    "origem": {"ip": "192.0.2.10", "porta": 12000},
+    "destino": {"ip": "198.51.100.20", "porta": 443},
+    "protocolo": 6
+  },
+  "classificacao": {
+    "taxonomia": "taxonomia-ficticia-v0",
+    "rotulo": "DoS",
+    "score": 0.91,
+    "semantica_score": "valor_ilustrativo_sem_modelo",
+    "limiar": null
+  },
+  "modelo": {"versao": "fixture-sem-modelo", "checkpoint_sha256": null}
+}
