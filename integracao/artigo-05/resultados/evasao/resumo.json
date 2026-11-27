@@ -1,0 +1,44 @@
+{
+  "natureza": "ensaio no espaço de features (transplante de valores BENIGN); não é tráfego realizável",
+  "fluxos_ddos": 2000,
+  "seed": 7,
+  "origem": "treino final, disjunto da amostra e do fundo do Passo 1",
+  "evasao_sem_ataque": {
+    "Global": 0.0,
+    "Cliente 0": 0.0,
+    "Cliente 1": 0.001,
+    "Cliente 2": 0.3005,
+    "Cliente 3": 0.011,
+    "Cliente 4": 0.0
+  },
+  "ataque_do_mapa": "Top-8 SHAP",
+  "fluxos_que_enganaram_o_global": 1954,
+  "limiar_importancia_baixa": 0.0873777,
+  "criterio_blind_spot": "não alterada, separação depois do ataque >= 0,8 e |SHAP| abaixo da mediana",
+  "blind_spots": [
+    {
+      "feature": "Bwd Packet Length Std",
+      "familia": "Tamanho de pacote",
+      "posicao_shap": 45,
+      "separacao_depois_do_ataque": 0.9998469805527124
+    },
+    {
+      "feature": "Total Length of Fwd Packet",
+      "familia": "Volume (bytes)",
+      "posicao_shap": 49,
+      "separacao_depois_do_ataque": 0.9079999999999999
+    },
+    {
+      "feature": "Fwd RST Flags",
+      "familia": "Flags TCP",
+      "posicao_shap": 52,
+      "separacao_depois_do_ataque": 0.8895404298874106
+    },
+    {
+      "feature": "Total Length of Bwd Packet",
+      "familia": "Volume (bytes)",
+      "posicao_shap": 74,
+      "separacao_depois_do_ataque": 0.863386898669396
+    }
+  ]
+}

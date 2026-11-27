@@ -1,0 +1,373 @@
+{
+  "amostra_comum": {
+    "fluxos": 2000,
+    "fundo_benign": 500,
+    "seed": 1,
+    "origem": "treino final (teste reservado não usado)"
+  },
+  "aditividade_erro_maximo": {
+    "Global": 4.336293204687536e-05,
+    "Cliente 0": 3.457890124991536e-05,
+    "Cliente 1": 2.7659014449454844e-05,
+    "Cliente 2": 2.8691295483440626e-05,
+    "Cliente 3": 4.342708780313842e-05,
+    "Cliente 4": 6.081329775042832e-05
+  },
+  "desempenho_no_treino_completo": {
+    "Global": {
+      "acerto": 0.9997953352172989,
+      "recall_ddos": 0.9996413914013628,
+      "taxa_falso_alarme": 0.00016676476358642338,
+      "falsos_alarmes": 34,
+      "ddos_perdidos": 18
+    },
+    "Cliente 0": {
+      "acerto": 0.9937852751560569,
+      "recall_ddos": 0.9999800773000757,
+      "taxa_falso_alarme": 0.007739846968805179,
+      "falsos_alarmes": 1578,
+      "ddos_perdidos": 1
+    },
+    "Cliente 1": {
+      "acerto": 0.9993938773743083,
+      "recall_ddos": 0.9977288122086305,
+      "taxa_falso_alarme": 0.00019619383951343929,
+      "falsos_alarmes": 40,
+      "ddos_perdidos": 114
+    },
+    "Cliente 2": {
+      "acerto": 0.9381282618449743,
+      "recall_ddos": 0.6869147706897238,
+      "taxa_falso_alarme": 2.452422993917991e-05,
+      "falsos_alarmes": 5,
+      "ddos_perdidos": 15715
+    },
+    "Cliente 3": {
+      "acerto": 0.9979376087281658,
+      "recall_ddos": 0.9898593457385345,
+      "taxa_falso_alarme": 7.357268981753973e-05,
+      "falsos_alarmes": 15,
+      "ddos_perdidos": 509
+    },
+    "Cliente 4": {
+      "acerto": 0.9998976676086494,
+      "recall_ddos": 0.9998406184006057,
+      "taxa_falso_alarme": 8.828722778104768e-05,
+      "falsos_alarmes": 18,
+      "ddos_perdidos": 8
+    }
+  },
+  "intensidade": {
+    "Global": {
+      "logit_base": -13.95704174041748,
+      "logit_medio_ddos": 4.881908416748047,
+      "logit_medio_benign": -14.141247749328613,
+      "soma_shap_media_ddos": 18.838950195104285
+    },
+    "Cliente 0": {
+      "logit_base": -6.862963676452637,
+      "logit_medio_ddos": 4.451169967651367,
+      "logit_medio_benign": -6.980813503265381,
+      "soma_shap_media_ddos": 11.31413359951221
+    },
+    "Cliente 1": {
+      "logit_base": -10.746349334716797,
+      "logit_medio_ddos": 3.1755590438842773,
+      "logit_medio_benign": -10.900513648986816,
+      "soma_shap_media_ddos": 13.921908571429515
+    },
+    "Cliente 2": {
+      "logit_base": -10.799042701721191,
+      "logit_medio_ddos": 0.2622591257095337,
+      "logit_medio_benign": -10.936720848083496,
+      "soma_shap_media_ddos": 11.06130261718485
+    },
+    "Cliente 3": {
+      "logit_base": -12.517252922058105,
+      "logit_medio_ddos": 2.7547333240509033,
+      "logit_medio_benign": -12.687851905822754,
+      "soma_shap_media_ddos": 15.271985393018884
+    },
+    "Cliente 4": {
+      "logit_base": -17.372005462646484,
+      "logit_medio_ddos": 6.485454082489014,
+      "logit_medio_benign": -17.594179153442383,
+      "soma_shap_media_ddos": 23.85745846788439
+    }
+  },
+  "cliente2_menos_global_contribuicao_ddos": {
+    "mais_fracas": {
+      "Bwd Segment Size Avg": -2.0221,
+      "Packet Length Variance": -1.6771,
+      "Average Packet Size": -1.1368,
+      "Bwd Packet Length Max": -0.6748,
+      "Subflow Bwd Bytes": -0.5779,
+      "Packet Length Mean": -0.3127
+    },
+    "mais_fortes": {
+      "Flow IAT Std": 0.1022,
+      "Flow IAT Max": 0.1187,
+      "Bwd Packet Length Mean": 0.7594
+    }
+  },
+  "spearman_entre_modelos": {
+    "Global": {
+      "Global": 1.0,
+      "Cliente 0": 0.9845,
+      "Cliente 1": 0.989,
+      "Cliente 2": 0.9374,
+      "Cliente 3": 0.9874,
+      "Cliente 4": 0.9911
+    },
+    "Cliente 0": {
+      "Global": 0.9845,
+      "Cliente 0": 1.0,
+      "Cliente 1": 0.9851,
+      "Cliente 2": 0.9287,
+      "Cliente 3": 0.9768,
+      "Cliente 4": 0.9698
+    },
+    "Cliente 1": {
+      "Global": 0.989,
+      "Cliente 0": 0.9851,
+      "Cliente 1": 1.0,
+      "Cliente 2": 0.9601,
+      "Cliente 3": 0.9966,
+      "Cliente 4": 0.9662
+    },
+    "Cliente 2": {
+      "Global": 0.9374,
+      "Cliente 0": 0.9287,
+      "Cliente 1": 0.9601,
+      "Cliente 2": 1.0,
+      "Cliente 3": 0.9658,
+      "Cliente 4": 0.9007
+    },
+    "Cliente 3": {
+      "Global": 0.9874,
+      "Cliente 0": 0.9768,
+      "Cliente 1": 0.9966,
+      "Cliente 2": 0.9658,
+      "Cliente 3": 1.0,
+      "Cliente 4": 0.9637
+    },
+    "Cliente 4": {
+      "Global": 0.9911,
+      "Cliente 0": 0.9698,
+      "Cliente 1": 0.9662,
+      "Cliente 2": 0.9007,
+      "Cliente 3": 0.9637,
+      "Cliente 4": 1.0
+    }
+  },
+  "spearman_entre_modelos_so_ddos": {
+    "Global": {
+      "Global": 1.0,
+      "Cliente 0": 0.9876,
+      "Cliente 1": 0.9882,
+      "Cliente 2": 0.9485,
+      "Cliente 3": 0.9896,
+      "Cliente 4": 0.9968
+    },
+    "Cliente 0": {
+      "Global": 0.9876,
+      "Cliente 0": 1.0,
+      "Cliente 1": 0.9822,
+      "Cliente 2": 0.941,
+      "Cliente 3": 0.979,
+      "Cliente 4": 0.9811
+    },
+    "Cliente 1": {
+      "Global": 0.9882,
+      "Cliente 0": 0.9822,
+      "Cliente 1": 1.0,
+      "Cliente 2": 0.9689,
+      "Cliente 3": 0.998,
+      "Cliente 4": 0.9767
+    },
+    "Cliente 2": {
+      "Global": 0.9485,
+      "Cliente 0": 0.941,
+      "Cliente 1": 0.9689,
+      "Cliente 2": 1.0,
+      "Cliente 3": 0.9729,
+      "Cliente 4": 0.9332
+    },
+    "Cliente 3": {
+      "Global": 0.9896,
+      "Cliente 0": 0.979,
+      "Cliente 1": 0.998,
+      "Cliente 2": 0.9729,
+      "Cliente 3": 1.0,
+      "Cliente 4": 0.9788
+    },
+    "Cliente 4": {
+      "Global": 0.9968,
+      "Cliente 0": 0.9811,
+      "Cliente 1": 0.9767,
+      "Cliente 2": 0.9332,
+      "Cliente 3": 0.9788,
+      "Cliente 4": 1.0
+    }
+  },
+  "top10_em_comum": {
+    "Global": {
+      "Global": 10,
+      "Cliente 0": 9,
+      "Cliente 1": 9,
+      "Cliente 2": 8,
+      "Cliente 3": 9,
+      "Cliente 4": 9
+    },
+    "Cliente 0": {
+      "Global": 9,
+      "Cliente 0": 10,
+      "Cliente 1": 9,
+      "Cliente 2": 8,
+      "Cliente 3": 9,
+      "Cliente 4": 8
+    },
+    "Cliente 1": {
+      "Global": 9,
+      "Cliente 0": 9,
+      "Cliente 1": 10,
+      "Cliente 2": 9,
+      "Cliente 3": 10,
+      "Cliente 4": 9
+    },
+    "Cliente 2": {
+      "Global": 8,
+      "Cliente 0": 8,
+      "Cliente 1": 9,
+      "Cliente 2": 10,
+      "Cliente 3": 9,
+      "Cliente 4": 8
+    },
+    "Cliente 3": {
+      "Global": 9,
+      "Cliente 0": 9,
+      "Cliente 1": 10,
+      "Cliente 2": 9,
+      "Cliente 3": 10,
+      "Cliente 4": 9
+    },
+    "Cliente 4": {
+      "Global": 9,
+      "Cliente 0": 8,
+      "Cliente 1": 9,
+      "Cliente 2": 8,
+      "Cliente 3": 9,
+      "Cliente 4": 10
+    }
+  },
+  "top10_por_modelo": {
+    "Global": [
+      "Bwd Segment Size Avg",
+      "Packet Length Variance",
+      "Average Packet Size",
+      "Subflow Bwd Bytes",
+      "Packet Length Mean",
+      "SYN Flag Count",
+      "Bwd Packet Length Mean",
+      "Fwd IAT Total",
+      "Subflow Fwd Bytes",
+      "Flow Bytes/s"
+    ],
+    "Cliente 0": [
+      "Bwd Segment Size Avg",
+      "Average Packet Size",
+      "Packet Length Variance",
+      "Subflow Bwd Bytes",
+      "Packet Length Mean",
+      "Fwd IAT Total",
+      "Bwd Packet Length Mean",
+      "SYN Flag Count",
+      "Bwd Bulk Rate Avg",
+      "Flow Bytes/s"
+    ],
+    "Cliente 1": [
+      "Bwd Segment Size Avg",
+      "Average Packet Size",
+      "Packet Length Variance",
+      "Subflow Bwd Bytes",
+      "Packet Length Mean",
+      "Fwd IAT Total",
+      "Bwd Packet Length Mean",
+      "SYN Flag Count",
+      "Subflow Fwd Bytes",
+      "Bwd Bulk Rate Avg"
+    ],
+    "Cliente 2": [
+      "Bwd Segment Size Avg",
+      "Average Packet Size",
+      "Subflow Bwd Bytes",
+      "Packet Length Variance",
+      "Packet Length Mean",
+      "SYN Flag Count",
+      "Subflow Fwd Bytes",
+      "Bwd Bulk Rate Avg",
+      "Packet Length Std",
+      "Fwd IAT Total"
+    ],
+    "Cliente 3": [
+      "Bwd Segment Size Avg",
+      "Packet Length Variance",
+      "Average Packet Size",
+      "Subflow Bwd Bytes",
+      "Packet Length Mean",
+      "SYN Flag Count",
+      "Fwd IAT Total",
+      "Bwd Packet Length Mean",
+      "Subflow Fwd Bytes",
+      "Bwd Bulk Rate Avg"
+    ],
+    "Cliente 4": [
+      "Bwd Segment Size Avg",
+      "Packet Length Variance",
+      "Average Packet Size",
+      "Subflow Bwd Bytes",
+      "SYN Flag Count",
+      "Packet Length Mean",
+      "Bwd Packet Length Mean",
+      "Fwd IAT Total",
+      "Bwd Packet Length Max",
+      "Subflow Fwd Bytes"
+    ]
+  },
+  "global_vs_media_ponderada_dos_locais": {
+    "spearman": 0.998960745552104,
+    "top10_em_comum": 9
+  },
+  "features_diluidas_na_agregacao": [],
+  "parte_b_global_sobre_cada_cliente": {
+    "amostras": {
+      "Cliente 0": {
+        "BENIGN": 500,
+        "DDoS": 500
+      },
+      "Cliente 1": {
+        "BENIGN": 500,
+        "DDoS": 500
+      },
+      "Cliente 2": {
+        "BENIGN": 500,
+        "DDoS": 0
+      },
+      "Cliente 3": {
+        "BENIGN": 500,
+        "DDoS": 457
+      },
+      "Cliente 4": {
+        "BENIGN": 500,
+        "DDoS": 500
+      }
+    },
+    "spearman_vs_amostra_comum": {
+      "Cliente 0": 0.9813081541570977,
+      "Cliente 1": 0.997288901440271,
+      "Cliente 2": 0.9224173962157584,
+      "Cliente 3": 0.9937870658006213,
+      "Cliente 4": 0.9952103925444791
+    }
+  }
+}

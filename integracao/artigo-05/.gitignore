@@ -1,0 +1,4 @@
+# Gerados localmente; não versionar
+*.npz
+__pycache__/
+.venv/
