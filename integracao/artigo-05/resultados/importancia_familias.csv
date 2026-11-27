@@ -1,0 +1,12 @@
+familia,shap_medio_abs,n_features,feature_principal,fracao_do_total
+Tamanho de pacote,9.6226,17,Bwd Segment Size Avg,0.510834
+Tempo entre pacotes (IAT),1.92121,14,Fwd IAT Total,0.101991
+Volume (bytes),1.90349,4,Subflow Bwd Bytes,0.10105
+Flags TCP,1.83608,14,SYN Flag Count,0.0974719
+Atividade e ociosidade,1.04495,8,Idle Min,0.0554733
+Taxas (por segundo),0.969735,5,Flow Bytes/s,0.0514802
+Bulk,0.958587,6,Bwd Bulk Rate Avg,0.0508884
+Cabeçalho e janela TCP,0.298811,4,FWD Init Win Bytes,0.015863
+Contagem de pacotes,0.174831,5,Fwd Act Data Pkts,0.00928125
+Duração do fluxo,0.106732,2,Total TCP Flow Time,0.00566608
+ICMP,0,2,ICMP Code,0

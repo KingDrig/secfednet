@@ -1,0 +1,36 @@
+{
+  "explicador": "DeepExplainer (DeepLIFT/SHAP) sobre o logit de DDoS",
+  "fluxos_explicados": 2000,
+  "fundo_normais": 500,
+  "origem_dos_fluxos": "treino final reproduzido do Artigo 01 (teste congelado não usado)",
+  "logit_base": -13.95704174041748,
+  "aditividade_erro_maximo": 0.00011269224341958761,
+  "estabilidade_entre_sementes": [
+    {
+      "seeds": [
+        1,
+        2
+      ],
+      "spearman": 0.9376673256142333,
+      "top10_em_comum": 9
+    },
+    {
+      "seeds": [
+        1,
+        3
+      ],
+      "spearman": 0.9381981252268614,
+      "top10_em_comum": 9
+    }
+  ],
+  "deep_vs_gradient": {
+    "spearman": 0.9976729737362325,
+    "top10_em_comum": 9
+  },
+  "deep_vs_permutacao": {
+    "spearman": 0.5818099733263974,
+    "top10_em_comum": 5
+  },
+  "features_para_50pct": 8,
+  "features_para_80pct": 24
+}

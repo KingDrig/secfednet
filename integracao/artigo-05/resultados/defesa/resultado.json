@@ -1,0 +1,249 @@
+{
+  "natureza": "ensaio no espaço de features; treino FedAvg simulado em processo, sem Flower",
+  "configuracao": {
+    "rodadas_extras": 3,
+    "lote": 512,
+    "taxa": 0.001,
+    "epocas_locais": 1,
+    "fracao_avaliacao": 0.1,
+    "seed": 11,
+    "features_aumentadas": {
+      "Controle (treino extra)": null,
+      "Adversarial top-8": [
+        "Bwd Segment Size Avg",
+        "Packet Length Variance",
+        "Average Packet Size",
+        "Subflow Bwd Bytes",
+        "Packet Length Mean",
+        "SYN Flag Count",
+        "Bwd Packet Length Mean",
+        "Fwd IAT Total"
+      ],
+      "Adversarial família": [
+        "Total Length of Fwd Packet",
+        "Total Length of Bwd Packet",
+        "Fwd Packet Length Max",
+        "Fwd Packet Length Min",
+        "Fwd Packet Length Mean",
+        "Fwd Packet Length Std",
+        "Bwd Packet Length Max",
+        "Bwd Packet Length Min",
+        "Bwd Packet Length Mean",
+        "Bwd Packet Length Std",
+        "Packet Length Min",
+        "Packet Length Max",
+        "Packet Length Mean",
+        "Packet Length Std",
+        "Packet Length Variance",
+        "Average Packet Size",
+        "Fwd Segment Size Avg",
+        "Bwd Segment Size Avg",
+        "Subflow Fwd Bytes",
+        "Subflow Bwd Bytes",
+        "Fwd Seg Size Min"
+      ]
+    },
+    "alfa_aumento": "U(0,5; 1)",
+    "fluxos_de_ataque": 2000
+  },
+  "desempenho_limpo_na_avaliacao": {
+    "Original": {
+      "recall_ddos": 0.9992030284917314,
+      "taxa_falso_alarme": 0.00019619383951343929,
+      "falsos_alarmes": 4,
+      "ddos_perdidos": 4
+    },
+    "Controle (treino extra)": {
+      "recall_ddos": 0.9996015142458657,
+      "taxa_falso_alarme": 4.904845987835982e-05,
+      "falsos_alarmes": 1,
+      "ddos_perdidos": 2
+    },
+    "Adversarial top-8": {
+      "recall_ddos": 1.0,
+      "taxa_falso_alarme": 0.00034333921914851874,
+      "falsos_alarmes": 7,
+      "ddos_perdidos": 0
+    },
+    "Adversarial família": {
+      "recall_ddos": 1.0,
+      "taxa_falso_alarme": 0.0033352952717284677,
+      "falsos_alarmes": 68,
+      "ddos_perdidos": 0
+    }
+  },
+  "evasao_cenarios_fixos": {
+    "Top-4 SHAP (original)": {
+      "Original": 0.966,
+      "Controle (treino extra)": 0.9665,
+      "Adversarial top-8": 0.45,
+      "Adversarial família": 0.1645
+    },
+    "Top-8 SHAP (original)": {
+      "Original": 0.979,
+      "Controle (treino extra)": 0.9775,
+      "Adversarial top-8": 0.0425,
+      "Adversarial família": 0.195
+    },
+    "Tamanho de pacote (17)": {
+      "Original": 0.9805,
+      "Controle (treino extra)": 0.982,
+      "Adversarial top-8": 0.972,
+      "Adversarial família": 0.406
+    },
+    "Tamanho de pacote + Volume (21)": {
+      "Original": 0.979,
+      "Controle (treino extra)": 0.9815,
+      "Adversarial top-8": 0.969,
+      "Adversarial família": 0.392
+    }
+  },
+  "ataque_adaptativo": {
+    "k_para_90pct_de_evasao": {
+      "Original": 2,
+      "Controle (treino extra)": 2,
+      "Adversarial top-8": 12,
+      "Adversarial família": 12
+    },
+    "top8_de_cada_modelo": {
+      "Original": [
+        "Bwd Segment Size Avg",
+        "Packet Length Variance",
+        "Average Packet Size",
+        "Subflow Bwd Bytes",
+        "Packet Length Mean",
+        "SYN Flag Count",
+        "Bwd Packet Length Mean",
+        "Fwd IAT Total"
+      ],
+      "Controle (treino extra)": [
+        "Bwd Segment Size Avg",
+        "Packet Length Variance",
+        "Average Packet Size",
+        "Subflow Bwd Bytes",
+        "SYN Flag Count",
+        "Bwd Packet Length Mean",
+        "Bwd Packet Length Max",
+        "Fwd IAT Total"
+      ],
+      "Adversarial top-8": [
+        "Bwd Packet Length Max",
+        "Bwd Segment Size Avg",
+        "SYN Flag Count",
+        "Packet Length Max",
+        "Bwd Packet Length Mean",
+        "Packet Length Variance",
+        "Average Packet Size",
+        "Subflow Fwd Bytes"
+      ],
+      "Adversarial família": [
+        "Bwd Segment Size Avg",
+        "Fwd IAT Total",
+        "Packet Length Variance",
+        "FIN Flag Count",
+        "Flow Bytes/s",
+        "Bwd IAT Mean",
+        "Down/Up Ratio",
+        "Bwd Packet Length Max"
+      ]
+    }
+  },
+  "familias_por_modelo": {
+    "Original": {
+      "Tamanho de pacote": 0.5108,
+      "Tempo entre pacotes (IAT)": 0.102,
+      "Volume (bytes)": 0.1011,
+      "Flags TCP": 0.0975,
+      "Atividade e ociosidade": 0.0555,
+      "Taxas (por segundo)": 0.0515,
+      "Bulk": 0.0509,
+      "Cabeçalho e janela TCP": 0.0159,
+      "Contagem de pacotes": 0.0093,
+      "Duração do fluxo": 0.0057,
+      "ICMP": 0.0
+    },
+    "Controle (treino extra)": {
+      "Tamanho de pacote": 0.5373,
+      "Flags TCP": 0.1145,
+      "Tempo entre pacotes (IAT)": 0.1024,
+      "Volume (bytes)": 0.0833,
+      "Taxas (por segundo)": 0.0657,
+      "Bulk": 0.0483,
+      "Atividade e ociosidade": 0.03,
+      "Cabeçalho e janela TCP": 0.0102,
+      "Contagem de pacotes": 0.005,
+      "Duração do fluxo": 0.0034,
+      "ICMP": 0.0
+    },
+    "Adversarial top-8": {
+      "Tamanho de pacote": 0.4816,
+      "Tempo entre pacotes (IAT)": 0.1676,
+      "Flags TCP": 0.1322,
+      "Volume (bytes)": 0.0634,
+      "Taxas (por segundo)": 0.0519,
+      "Bulk": 0.0353,
+      "Atividade e ociosidade": 0.0345,
+      "Cabeçalho e janela TCP": 0.0146,
+      "Duração do fluxo": 0.0111,
+      "Contagem de pacotes": 0.0078,
+      "ICMP": 0.0
+    },
+    "Adversarial família": {
+      "Tamanho de pacote": 0.4148,
+      "Tempo entre pacotes (IAT)": 0.2871,
+      "Flags TCP": 0.1231,
+      "Taxas (por segundo)": 0.086,
+      "Cabeçalho e janela TCP": 0.0206,
+      "Atividade e ociosidade": 0.0192,
+      "Volume (bytes)": 0.0171,
+      "Bulk": 0.017,
+      "Duração do fluxo": 0.0111,
+      "Contagem de pacotes": 0.0041,
+      "ICMP": 0.0
+    }
+  },
+  "historico": {
+    "Controle (treino extra)": [
+      {
+        "rodada": 1,
+        "exemplos": 228667
+      },
+      {
+        "rodada": 2,
+        "exemplos": 228667
+      },
+      {
+        "rodada": 3,
+        "exemplos": 228667
+      }
+    ],
+    "Adversarial top-8": [
+      {
+        "rodada": 1,
+        "exemplos": 273842
+      },
+      {
+        "rodada": 2,
+        "exemplos": 273842
+      },
+      {
+        "rodada": 3,
+        "exemplos": 273842
+      }
+    ],
+    "Adversarial família": [
+      {
+        "rodada": 1,
+        "exemplos": 273842
+      },
+      {
+        "rodada": 2,
+        "exemplos": 273842
+      },
+      {
+        "rodada": 3,
+        "exemplos": 273842
+      }
+    ]
+  }
+}

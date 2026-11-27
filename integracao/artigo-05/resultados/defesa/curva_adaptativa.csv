@@ -1,0 +1,41 @@
+modelo,k,evasao
+Original,1,0.1805
+Original,2,0.9360
+Original,4,0.9660
+Original,6,0.9660
+Original,8,0.9790
+Original,12,0.9975
+Original,16,0.9990
+Original,24,1.0000
+Original,32,1.0000
+Original,48,1.0000
+Controle (treino extra),1,0.2570
+Controle (treino extra),2,0.9455
+Controle (treino extra),4,0.9665
+Controle (treino extra),6,0.9625
+Controle (treino extra),8,0.9845
+Controle (treino extra),12,0.9985
+Controle (treino extra),16,0.9995
+Controle (treino extra),24,1.0000
+Controle (treino extra),32,1.0000
+Controle (treino extra),48,1.0000
+Adversarial top-8,1,0.0020
+Adversarial top-8,2,0.0385
+Adversarial top-8,4,0.5245
+Adversarial top-8,6,0.2850
+Adversarial top-8,8,0.8925
+Adversarial top-8,12,0.9695
+Adversarial top-8,16,0.9760
+Adversarial top-8,24,0.9945
+Adversarial top-8,32,0.9985
+Adversarial top-8,48,0.9990
+Adversarial família,1,0.0015
+Adversarial família,2,0.0635
+Adversarial família,4,0.1970
+Adversarial família,6,0.2985
+Adversarial família,8,0.7770
+Adversarial família,12,0.9560
+Adversarial família,16,0.9915
+Adversarial família,24,0.9530
+Adversarial família,32,0.9900
+Adversarial família,48,0.9955

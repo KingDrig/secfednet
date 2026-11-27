@@ -1,0 +1,5 @@
+cenario,Original,Controle (treino extra),Adversarial top-8,Adversarial família
+Top-4 SHAP (original),0.9660,0.9665,0.4500,0.1645
+Top-8 SHAP (original),0.9790,0.9775,0.0425,0.1950
+Tamanho de pacote (17),0.9805,0.9820,0.9720,0.4060
+Tamanho de pacote + Volume (21),0.9790,0.9815,0.9690,0.3920

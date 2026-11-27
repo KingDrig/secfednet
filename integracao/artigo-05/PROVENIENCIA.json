@@ -1,0 +1,121 @@
+{
+  "artigo": "05",
+  "passo": "1 · SHAP global; 2 · SHAP por cliente; 3 · ensaio de evasão; 4 · ensaio de defesa",
+  "data_execucao": "2026-11-26",
+  "repositorio": "https://github.com/KingDrig/secfednet",
+  "commit_artigo_01_conferido": {
+    "integracao/artigo-01": "2d73962985a353312ba34f56ddb688d4c226968b",
+    "observacao": "Arquivos usados idênticos aos do commit 0b38f25 (23/11)."
+  },
+  "entradas": {
+    "CICIDS2017_improved.zip": "97fdb91d339e2d8cf5627f981b831e5e7e400b981c58181c451a38fd03c48883",
+    "secfednet-cnn1d-v1.zip": "e7d042b38c77b96bef54533302bef817d6b8a4a8e55b717bac7b32f98b5b6014",
+    "checkpoint_cnn1d.pt": "37db7d4f6d0123786cc4ed5227d670edb1344c07089e8ff6910c6446e57400f3",
+    "split_cronologico.npz": "5511442dcb01580d7cd327f312ca2c651e7ed194f4628f2246387de0bd779447",
+    "cnn1d.py": "ed4f90225d3bbb765f9dc3bf461362ba7bdae6c47e70ac1c3333bbe8b0598861",
+    "secfednet-shap-fedavg3.zip": "9eac2d389dbbc6e7e4eec030507b896fe51be4f634d0f6c0b8903a079b5bab92"
+  },
+  "treino_reconstruido": {
+    "fluxos": 254074,
+    "linhas_treino_final_sha256": "b1a7e316661ebe6e0d5bb87ec712e989739a9768c38baad2096d91042a9d2247",
+    "media_e_escala": "idênticas às do checkpoint",
+    "particao": {
+      "clientes": 5,
+      "alpha_dirichlet": 0.5,
+      "seed_particao": 2305,
+      "contagens": [
+        {
+          "cliente": 0,
+          "total": 32497,
+          "BENIGN": 5498,
+          "DDoS": 26999
+        },
+        {
+          "cliente": 1,
+          "total": 18582,
+          "BENIGN": 17847,
+          "DDoS": 735
+        },
+        {
+          "cliente": 2,
+          "total": 7634,
+          "BENIGN": 7634,
+          "DDoS": 0
+        },
+        {
+          "cliente": 3,
+          "total": 54587,
+          "BENIGN": 54130,
+          "DDoS": 457
+        },
+        {
+          "cliente": 4,
+          "total": 140774,
+          "BENIGN": 118771,
+          "DDoS": 22003
+        }
+      ]
+    }
+  },
+  "teste_reservado": "não lido para inferência; usado apenas pelo expurgo do Artigo 01 ao reconstruir o treino",
+  "parametros": {
+    "fluxos_explicados": 2000,
+    "fundo_benign": 500,
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "gradient_nsamples": 200,
+    "permutacao": {
+      "fluxos": 20000,
+      "repeticoes": 3,
+      "metrica": "aumento da log-loss"
+    },
+    "evasao": {
+      "fluxos_ddos": 2000,
+      "seed": 7,
+      "sorteios_controle": 20,
+      "alfas": "0 a 1, passo 0,1",
+      "ataque_do_mapa": "Top-8 SHAP"
+    },
+    "defesa": {
+      "rodadas_extras": 3,
+      "lote": 512,
+      "taxa": 0.001,
+      "epocas_locais": 1,
+      "fracao_avaliacao": 0.1,
+      "seed": 11,
+      "variantes": [
+        "Controle",
+        "Adversarial top-8",
+        "Adversarial família (21)"
+      ],
+      "fedavg": "simulado em processo, sem Flower"
+    }
+  },
+  "ambiente": {
+    "python": "3.13.18",
+    "torch": "2.15.0+cu132",
+    "shap": "0.54.1",
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "scipy": "1.18.1",
+    "dispositivo": "cpu"
+  },
+  "reproducao": "Duas execuções independentes produziram CSV e JSON idênticos byte a byte.",
+  "inferencia_de_referencia": {
+    "score_exemplo_oficial": 0.987495481967926,
+    "confere": true
+  },
+  "modelos_locais": {
+    "global_zip.pt": "37db7d4f6d0123786cc4ed5227d670edb1344c07089e8ff6910c6446e57400f3",
+    "cliente_0_rodada_03.pt": "ba3b6847584e9270d83c3fafd8ee3247c85961998b7aeec45ca7920b07bc92da",
+    "cliente_1_rodada_03.pt": "08c9480e2867691e4c900308022638d2f73d99949bd86dfd9fbc40968642150e",
+    "cliente_2_rodada_03.pt": "0596f1eff0fdef040d3e8a1f5b32da1909dba0317986d60f56f7f6e3c7e482fe",
+    "cliente_3_rodada_03.pt": "f9c4a629eca53bb986ec32e16816862143cb854ca0e4c5222cc957a534f11338",
+    "cliente_4_rodada_03.pt": "722f02b9e1838e0ca147f346a2a2d1472d5e7e9f05928d24584530cf9ef81d82",
+    "particao_do_pacote": "idêntica à reconstruída por preparar_dados.py",
+    "validar_pacote.py": "passa todas as checagens estruturais e a recomposição bit a bit do global; falha só na igualdade exata das saídas (diferenças ~1e-7 por plataforma, também com PyTorch 2.12.1)"
+  }
+}

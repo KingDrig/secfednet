@@ -1,0 +1,45 @@
+cenario,alfa,evasao_global
+Top-4 SHAP,0.0000,0.0000
+Top-4 SHAP,0.1000,0.0010
+Top-4 SHAP,0.2000,0.0055
+Top-4 SHAP,0.3000,0.0405
+Top-4 SHAP,0.4000,0.1250
+Top-4 SHAP,0.5000,0.3535
+Top-4 SHAP,0.6000,0.6575
+Top-4 SHAP,0.7000,0.8785
+Top-4 SHAP,0.8000,0.9390
+Top-4 SHAP,0.9000,0.9555
+Top-4 SHAP,1.0000,0.9670
+Top-8 SHAP,0.0000,0.0000
+Top-8 SHAP,0.1000,0.0005
+Top-8 SHAP,0.2000,0.0045
+Top-8 SHAP,0.3000,0.0300
+Top-8 SHAP,0.4000,0.1095
+Top-8 SHAP,0.5000,0.2685
+Top-8 SHAP,0.6000,0.5440
+Top-8 SHAP,0.7000,0.8180
+Top-8 SHAP,0.8000,0.9330
+Top-8 SHAP,0.9000,0.9670
+Top-8 SHAP,1.0000,0.9770
+Tamanho de pacote (17),0.0000,0.0000
+Tamanho de pacote (17),0.1000,0.0010
+Tamanho de pacote (17),0.2000,0.0080
+Tamanho de pacote (17),0.3000,0.0375
+Tamanho de pacote (17),0.4000,0.1105
+Tamanho de pacote (17),0.5000,0.2950
+Tamanho de pacote (17),0.6000,0.6185
+Tamanho de pacote (17),0.7000,0.8745
+Tamanho de pacote (17),0.8000,0.9495
+Tamanho de pacote (17),0.9000,0.9695
+Tamanho de pacote (17),1.0000,0.9805
+8 menos importantes,0.0000,0.0000
+8 menos importantes,0.1000,0.0000
+8 menos importantes,0.2000,0.0000
+8 menos importantes,0.3000,0.0000
+8 menos importantes,0.4000,0.0000
+8 menos importantes,0.5000,0.0000
+8 menos importantes,0.6000,0.0000
+8 menos importantes,0.7000,0.0000
+8 menos importantes,0.8000,0.0000
+8 menos importantes,0.9000,0.0000
+8 menos importantes,1.0000,0.0000
